@@ -10,6 +10,7 @@ pipeline {
      		steps {
           		sh "docker build -t localhost/calculator ."
      		}
+	}
 	stage("Docker push") {
      		steps {
           		sh "docker push localhost/calculator"
